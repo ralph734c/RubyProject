@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # needed for devise authentication
 gem 'bcrypt', '~> 3.1.18'
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.2.1'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -73,3 +76,9 @@ gem 'pry', '~> 0.14.1'
 
 # ostruct for the guest user feature being created per Section 9, video 101 deep dive of the Ruby on Rails course
 gem 'ostruct', '~> 0.5.5'
+
+# bootstrap for CSS and JS styles/colors/etc
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# upgrading sprockets-rails to match Ruby course + bootstrap version
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'

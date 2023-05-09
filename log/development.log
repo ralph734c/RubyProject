@@ -5415,3 +5415,255 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 287ms (Views: 174.6ms | ActiveRecord: 10.9ms)
 
 
+Started GET "/" for 172.18.0.1 at 2023-05-09 14:38:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (9.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (5.9ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (71.2ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 828ms (Views: 667.7ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 14:53:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (3.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (1.7ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (19.5ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 192ms (Views: 158.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 15:06:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (8.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (4.6ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (69.2ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 14077ms (Views: 13925.0ms | ActiveRecord: 34.8ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 15:10:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Desktop/RubyProject/app/assets/config
+  /Desktop/RubyProject/app/assets/images
+  /Desktop/RubyProject/app/assets/javascripts
+  /Desktop/RubyProject/app/assets/stylesheets
+  /usr/local/bundle/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/bundle/gems/actioncable-5.2.7.1/lib/assets/compiled
+  /usr/local/bundle/gems/activestorage-5.2.7.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-5.2.7.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Desktop/RubyProject/node_modules
+  /usr/local/bundle/gems/popper_js-1.16.1/assets/javascripts
+  /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets
+  /usr/local/bundle/gems/bootstrap-4.0.0/assets/javascripts):
+     9:     <%= csp_meta_tag %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__4069683119129164157_70341789389520'
+Started GET "/" for 172.18.0.1 at 2023-05-09 15:14:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (8.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (4.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (66.2ms)
+Completed 500 Internal Server Error in 1755ms (ActiveRecord: 31.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Desktop/RubyProject/app/assets/config
+  /Desktop/RubyProject/app/assets/images
+  /Desktop/RubyProject/app/assets/javascripts
+  /Desktop/RubyProject/app/assets/stylesheets
+  /usr/local/bundle/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/bundle/gems/actioncable-5.2.7.1/lib/assets/compiled
+  /usr/local/bundle/gems/activestorage-5.2.7.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-5.2.7.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Desktop/RubyProject/node_modules
+  /usr/local/bundle/gems/popper_js-1.16.1/assets/javascripts
+  /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets
+  /usr/local/bundle/gems/bootstrap-4.0.0/assets/javascripts):
+     8: 
+     9:     <%= csp_meta_tag %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__4389221099421515845_47448182727820'
+Started GET "/" for 172.18.0.1 at 2023-05-09 15:19:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (9.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (6.0ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (93.6ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 12422ms (Views: 12262.2ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/portfolios" for 172.18.0.1 at 2023-05-09 15:20:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (4.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  ↳ app/views/portfolios/index.html.erb:5
+  Rendered collection of portfolios/_portfolio_item.html.erb [11 times] (2.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (65.2ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+Completed 200 OK in 443ms (Views: 345.9ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/portfolios" for 172.18.0.1 at 2023-05-09 15:20:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  ↳ app/views/portfolios/index.html.erb:5
+  Rendered collection of portfolios/_portfolio_item.html.erb [11 times] (2.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (33.4ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+Completed 200 OK in 304ms (Views: 279.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 172.18.0.1 at 2023-05-09 15:20:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (3.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered collection of blogs/_blog.html.erb [10 times] (356.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (388.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 852ms (Views: 801.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/blogs" for 172.18.0.1 at 2023-05-09 15:20:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered collection of blogs/_blog.html.erb [10 times] (4.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (32.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 302ms (Views: 278.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about-me" for 172.18.0.1 at 2023-05-09 15:20:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+Completed 200 OK in 310ms (Views: 258.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about-me" for 172.18.0.1 at 2023-05-09 15:20:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+Completed 200 OK in 295ms (Views: 271.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 172.18.0.1 at 2023-05-09 15:20:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (1.3ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+Completed 200 OK in 311ms (Views: 265.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 15:20:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (1.8ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (11.7ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 315ms (Views: 268.5ms | ActiveRecord: 2.5ms)
+
+
