@@ -82,3 +82,5 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 
 # upgrading sprockets-rails to match Ruby course + bootstrap version
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
+
+gem 'ralph_view_tool', git: 'https://github.com/ralph734c/ralph_view_tool', branch: 'main'

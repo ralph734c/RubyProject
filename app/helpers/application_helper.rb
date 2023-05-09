@@ -13,6 +13,10 @@ module ApplicationHelper
     if session[:source]
       greeting = "Thanks for visting me from #{session[:source]} and you are on the #{layout_name} layout"
        content_tag(:p, greeting, class: "source-greeting")
+    end
   end
-end
+
+  def copyright_generator
+    RalphViewTool::Renderer.copyright 'Christopher Ralph', 'All rights reserved'
+  end
 end
