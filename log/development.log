@@ -5208,3 +5208,210 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 242ms (Views: 165.9ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:46:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (5.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (5.2ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (61.0ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 370ms (Views: 219.5ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:47:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (21.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 283ms (Views: 177.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/login" for 172.18.0.1 at 2023-05-09 00:47:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.6ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 235ms (Views: 225.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/register" for 172.18.0.1 at 2023-05-09 00:47:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (54.9ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 240ms (Views: 239.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 172.18.0.1 at 2023-05-09 00:47:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZVcrALJlKfEVt0WUU19kV6lD4ZBI8diwV5gKTj5JXCIyoVleeBu3TosUm3/rL5SSUlCyW4Y/JHfR4Q9O2w9Qew==", "user"=>{"email"=>"chris.734c@gmail.com", "name"=>"Chris Test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (12.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chris.734c@gmail.com"], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.2ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 591ms (Views: 297.6ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/" for 172.18.0.1 at 2023-05-09 00:48:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YWKHv5dnU/ORcCcS7+0P23q3DDNNv1TQXQ3jm+hUWnQX+AWqT7FTacjSxZAGo9uZfXYon2Ea/yJK6NY43rxVXQ==", "user"=>{"email"=>"chris.734c+1@gmail.com", "name"=>"Chris Test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chris.734c+1@gmail.com"], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (9.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "chris.734c+1@gmail.com"], ["encrypted_password", "$2a$12$LOoHJ48CMtgxghTiE5SKd.Q/ETdp8ujAhAigtbFRoLYiMXn.cCItO"], ["name", "Chris Test"], ["created_at", "2023-05-09 00:48:06.246219"], ["updated_at", "2023-05-09 00:48:06.246219"]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 284ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:48:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (13.5ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 190ms (Views: 165.9ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/logout" for 172.18.0.1 at 2023-05-09 00:48:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jri82MG8oYrITdWZrPKDPS9aUiqf2LVOPD4i6xvmv0X4Ij7NGWqhEJHvNxtFvFd/KJt2hrN9Hrwr2xdILQ6wbA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:48:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (8.0ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 189ms (Views: 166.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register" for 172.18.0.1 at 2023-05-09 00:48:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.0ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 230ms (Views: 229.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 172.18.0.1 at 2023-05-09 00:48:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SjW2DWE/u1qj4G3ik0C0EnCWc2X3Un3q6zuSOs+qdKU/+4hFiA2P1mHvEHGVK4F0szWdqBs6IJsBJk6onFotew==", "user"=>{"email"=>"chris.734c+2@gmail.com", "name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chris.734c+2@gmail.com"], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "chris.734c+2@gmail.com"], ["encrypted_password", "$2a$12$4Ee7q2noL9tAHl4uvKBjZOXLfZ89VEYTM7LjLnZzU5U1Dt/uZ0EZK"], ["name", ""], ["created_at", "2023-05-09 00:48:39.996433"], ["updated_at", "2023-05-09 00:48:39.996433"]]
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 263ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:48:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (9.9ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 182ms (Views: 159.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:49:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  Rendered pages/home.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `oops' for nil:NilClass):
+    1: <h1>Hi, <%= current_user.first_name %></h1>
+    2: <p>Find me in app/views/pages/home.html.erb</p>
+    3: 
+    4: <h1>Blog Posts</h1>
+  
+app/models/user.rb:10:in `first_name'
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___3580530094684265209_70299729206920'
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:51:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/Desktop/RubyProject/app/models/user.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/user.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 172.18.0.1 at 2023-05-09 00:51:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:5
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (36.3ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 287ms (Views: 174.6ms | ActiveRecord: 10.9ms)
+
+
