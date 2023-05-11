@@ -87,4 +87,4 @@ gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
 gem 'ralph_view_tool', '~> 0.1.0'
 
 # authorization - set up users and role permissions
-gem 'petergate', '~> 1.7'
+gem 'petergate', '~> 1.9.1'
