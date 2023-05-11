@@ -83,4 +83,8 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 # upgrading sprockets-rails to match Ruby course + bootstrap version
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
 
+# "custom gem" created through Ruby course for the copyright - this is the same as Jordan H's version, except named for myself as it was published to RubyGems
 gem 'ralph_view_tool', '~> 0.1.0'
+
+# authorization - set up users and role permissions
+gem 'petergate', '~> 1.9.1'
