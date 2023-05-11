@@ -50,7 +50,7 @@ rails g scaffold Blog title:string body:text
 
 Docker compose run web bundle install
 
-Docker compose up —build
+Docker compose up --build
 
 ------------------------------------------------------------
 
