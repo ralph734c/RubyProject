@@ -1,3 +1,4 @@
 tmp/
 postgres-data/
 Running_Ruby_in_Docker.txt
+log/development.log
