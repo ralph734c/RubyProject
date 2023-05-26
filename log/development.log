@@ -9589,3 +9589,368 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 329ms (Views: 288.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/about-me" for 172.29.0.1 at 2023-05-19 00:17:07 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 333ms (Views: 294.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 172.29.0.1 at 2023-05-19 00:17:08 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (14.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered collection of blogs/_blog.html.erb [10 times] (6.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (102.1ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 62.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    16:     <p class="notice"><%= notice %></p>
+    17:     <p class="alert"><%= alert %></p>
+    18: 
+    19:     <%= login_helper %>
+    20: 
+    21:     <%= yield %>
+    22: 
+  
+app/helpers/application_helper.rb:2:in `login_helper'
+app/views/layouts/blog.html.erb:19:in `_app_views_layouts_blog_html_erb___773201996866724433_70073203870960'
+Started GET "/about-me" for 172.29.0.1 at 2023-05-19 00:17:24 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 336ms (Views: 290.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios" for 172.29.0.1 at 2023-05-19 00:17:26 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (4.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  ↳ app/views/portfolios/index.html.erb:5
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (45.2ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 500 Internal Server Error in 355ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    18: 
+    19:     <%= render "shared/nav", location: 'top' %>
+    20: 
+    21:     <%= login_helper %>
+    22: 
+    23:     <%= yield %>
+    24: 
+  
+app/helpers/application_helper.rb:2:in `login_helper'
+app/views/layouts/portfolio.html.erb:21:in `_app_views_layouts_portfolio_html_erb__4345736991448887280_70073179751640'
+Started GET "/about-me" for 172.29.0.1 at 2023-05-19 00:17:29 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 315ms (Views: 280.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-25 23:54:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered shared/_application_nav.html.erb (49.4ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 2492ms (Views: 2289.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-25 23:54:55 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.2ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 331ms (Views: 272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-25 23:54:56 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 345ms (Views: 279.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 172.30.0.1 at 2023-05-25 23:54:58 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (12.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:16
+  Rendered collection of blogs/_blog.html.erb [10 times] (41.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (90.9ms)
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 14.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    16:     <p class="notice"><%= notice %></p>
+    17:     <p class="alert"><%= alert %></p>
+    18: 
+    19:     <%= login_helper %>
+    20: 
+    21:     <%= yield %>
+    22: 
+  
+app/helpers/application_helper.rb:2:in `login_helper'
+app/views/layouts/blog.html.erb:19:in `_app_views_layouts_blog_html_erb__1096438747095498651_70248049030640'
+Started GET "/contact" for 172.30.0.1 at 2023-05-25 23:55:00 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 285.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-25 23:55:04 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.2ms)
+Completed 200 OK in 312ms (Views: 267.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-25 23:58:33 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 281ms (Views: 252.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-25 23:58:58 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 334ms (Views: 288.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-26 00:10:51 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 315ms (Views: 289.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-26 00:11:51 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 293.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-26 00:12:01 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 961ms (Views: 905.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-26 00:12:11 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 316ms (Views: 284.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:12:12 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 303ms (Views: 264.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:12:51 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 286ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-26 00:12:53 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 275.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-26 00:12:59 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 310ms (Views: 264.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:13:05 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 315ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:18:00 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 301ms (Views: 274.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:26:09 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 298ms (Views: 273.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:26:33 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 307ms (Views: 277.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:27:29 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 308ms (Views: 282.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:29:36 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 297ms (Views: 267.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 172.30.0.1 at 2023-05-26 00:30:17 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (63.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 1188ms (Views: 1179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.30.0.1 at 2023-05-26 00:30:20 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.0ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 347ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 172.30.0.1 at 2023-05-26 00:30:22 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 324ms (Views: 281.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 172.30.0.1 at 2023-05-26 00:30:49 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 296.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.30.0.1 at 2023-05-26 00:30:52 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 323ms (Views: 269.2ms | ActiveRecord: 0.0ms)
+
+
