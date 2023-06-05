@@ -88,3 +88,9 @@ gem 'ralph_view_tool', '~> 0.1.0'
 
 # authorization - set up users and role permissions
 gem 'petergate', '~> 1.9.1'
+
+# Cool fonts and icons - useful for social or branded links
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+
+# This gem deals with pagination
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
