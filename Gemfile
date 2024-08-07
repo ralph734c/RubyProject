@@ -78,7 +78,7 @@ gem 'pry', '~> 0.14.1'
 gem 'ostruct', '~> 0.5.5'
 
 # bootstrap for CSS and JS styles/colors/etc
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 5.0.0.0'
 
 # upgrading sprockets-rails to match Ruby course + bootstrap version
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
